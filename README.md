@@ -36,31 +36,32 @@ pip install -r requirements.txt
 ```
 
 ## Experimental Workflow
+Note: If running the script in the terminal, please first navigate to the directory where the script is located to avoid read/write errors caused by relative path issues.
 ### 1. Exploring Of Original Dataset
 Generate visualizations of emotion category distribution and text word count distribution for the original dair-ai/emotion dataset to intuitively show class imbalance and text features.
 ```bash
-python final_project/data_preprocessing/data_visualization.py
+execute data_preprocessing/data_visualization.py
 ```
 
 ### 2. Multilingual Back-Translation Data Augmentation
 Generate augmented samples via back-translation with 8 English-foreign language pairs to balance sample counts across emotion categories, then merge and visualize the augmented data to create a usable training dataset.
 ```bash
-python final_project/data_augmenting/data_augmentation.py
-python final_project/data_augmenting/augmented_data_combination.py
-python final_project/data_augmenting/augmented_data_visualization.py
+execute data_augmenting/data_augmentation.py
+execute data_augmenting/augmented_data_combination.py
+execute data_augmenting/augmented_data_visualization.py
 ```
 
 ### 3. TF-IDF+SVM Model Comparison Experiment
 Train TF-IDF+SVM models based on the original dataset and the augmented dataset respectively, compare accuracy, weighted F1-score and confusion matrices of the model under the two datasets, and analyze the impact of data augmentation on model performance.
 ```bash
-python final_project/data_augmenting/TF-IDF+SVM.py
+execute data_augmenting/TF-IDF+SVM.py
 ```
 
 ### 4. TF-IDF+SVM Model Comparison Experiment
 Train TF-IDF+XGBoost and TF-IDF+Random Forest models, calculate model evaluation metrics and generate confusion matrices to complete performance verification of traditional machine learning models
 ```bash
-python final_project/traditional_ML/TF-IDF+XGBoost.py
-python final_project/traditional_ML/TF-IDF+RandomForest.py
+execute traditional_ML/TF-IDF+XGBoost.py
+execute traditional_ML/TF-IDF+RandomForest.py
 ```
 
 ### 5. BERT Model Fine-Tuning and Prediction
@@ -68,9 +69,9 @@ Fine-tune BERT-base (110M parameters) and BERT-large (340M parameters) models re
 
 Note: Failure to run bert_base_uncased.py and bert_large_uncased.py will prevent running industrial_program.py due to the lack of fine-tuned model files.
 ```bash
-python final_project/LLM_fine_tuning/bert_base_uncased.py
-python final_project/LLM_fine_tuning/bert_large_uncased.py
-python final_project/industrial_program/industrial_program.py
+execute LLM_fine_tuning/bert_base_uncased.py
+execute LLM_fine_tuning/bert_large_uncased.py
+execute industrial_program/industrial_program.py
 ```
 
 
