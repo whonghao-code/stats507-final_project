@@ -5,7 +5,7 @@ Sentiment analysis is a key task in Natural Language Processing (NLP) with wide 
 
 For full details on the background, methodology, experimental setup, and result analysis, please consult the official report 'Final_project -Honghao Wang.pdf' in this directory.
 
-## 目录结构
+## Project Structure
 ```plaintext
 final_project/
 ├── data_augmenting/               # 数据增强模块
@@ -15,4 +15,22 @@ final_project/
 │   ├── augmented_data_visualization.py # 增强数据可视化脚本
 │   ├── data_augmentation.py       # 核心回译增强逻辑（基于翻译API实现）
 │   └── TF-IDF+SVM.py              # 基于增强数据的TF-IDF+SVM模型训练/预测
-...
+```
+
+## Environment Setup
+The project requires Python 3.8.19. All dependencies are listed in requirements.txt. You can install them using:
+```bash
+pip install -r requirements.txt
+```
+
+## Experimental Workflow
+### 1你好
+是
+
+
+## Contact Information
+Honghao Wang
+
+Dept. of Statistics, University of Michigan, Ann Arbor
+
+Email: whonghao@umich.edu
