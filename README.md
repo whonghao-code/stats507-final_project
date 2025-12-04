@@ -65,7 +65,7 @@ execute traditional_ML/TF-IDF+RandomForest.py
 ```
 
 ### 5. BERT Model Fine-Tuning and Prediction
-Fine-tune BERT-base (110M parameters) and BERT-large (340M parameters) models respectively, save the optimal model based on validation set performance; load the pre-trained BERT model to perform emotion prediction, output prediction labels and confidence scores, and calculate accuracy, weighted F1-score and generate confusion matrix to complete evaluation.
+Fine-tune BERT-base (110M parameters) and BERT-large (340M parameters) models respectively, save the optimal model based on validation set performance; load the fine-tuned BERT model to perform emotion prediction, output prediction labels and confidence scores, and calculate accuracy, weighted F1-score and generate confusion matrix to complete evaluation.
 
 Note: Failure to run bert_base_uncased.py and bert_large_uncased.py will prevent running industrial_program.py due to the lack of fine-tuned model files.
 ```bash
