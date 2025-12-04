@@ -18,7 +18,7 @@ final_project/
 │   └── data_visualization.py      # Visualizes the emotion category distribution and text word count distribution of the original dair-ai/emotion dataset.
 │
 ├── industrial_program/           
-│   └── prediction_program.py      # Loads the pre-trained BERT model to perform emotion prediction, outputs prediction results and confidence scores, and generates accuracy, weighted F1, and confusion matrix.
+│   └── prediction_program.py      # Loads the Fine-tuned BERT model to perform emotion prediction, outputs prediction results and confidence scores, and generates accuracy, weighted F1, and confusion matrix.
 │
 ├── LLM_fine_tuning/               
 │   ├── bert_base_finetune.py      # Fine-tunes the BERT-base (uncased) model for emotion classification and saves the optimal model weights.
